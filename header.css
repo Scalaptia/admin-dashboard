@@ -19,7 +19,6 @@
     }
 
         /* Bar */
-
         #search-bar {
             display: flex;
             align-items: center;
@@ -28,7 +27,11 @@
         }
 
         #search-bar svg, #user svg {
-            height: 30px;
+            height: 25px;
+            cursor: pointer;
+            border-radius: 50%;
+            transition: all 0.2s ease-in-out;
+            padding: 3px;
         }
 
         #search-bar input {
@@ -37,6 +40,8 @@
             height: 30px;
             border-radius: 10px;
             border-style: none;
+            padding-left: 10px;
+            padding-right: 10px;
         }
 
         /* User */
@@ -58,6 +63,16 @@
         #user h2 {
             font-size: 1.1rem;
         }
+
+        /* Search Animations */
+        #search-bar svg:hover, #user svg:hover {
+            background-color: #e2e8f0d7;
+        }
+
+        #user > * {
+            cursor: pointer;
+        }
+
     
     /* Welcome */
 
@@ -95,7 +110,6 @@
         }
 
     /* Buttons */
-    
     #welcome-buttons {
         display: flex;
         justify-content: end;
@@ -112,4 +126,11 @@
         background-color: var(--main-color);
         color: white;
         font-weight: 700;
+        transition: 0.3s;
+    }
+
+    /* Button Animations */
+    #welcome-buttons button:hover{
+        cursor: pointer;
+        background-color: #0284c7;
     }
